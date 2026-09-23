@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Metrica</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
 
   <body>
@@ -114,7 +115,7 @@
           <input type="checkbox" id="show_projects" />
 
           <div class="hidden_projects">
-            <!-- здесь ещё 2-3 project_card -->
+            <!-- здесь ещё 2 project_card -->
             <div class="project_card">
               <img
                 class="picture_card"
@@ -169,40 +170,50 @@
       <div id="services_section">
         <div class="container">
           <h3 id="title_serv">УСЛУГИ</h3>
-          <div class="service_card">
-            <img
-              class="img_service"
-              src="./assets/pictures/service_1.jpg"
-              alt="img"
-            />
-            <p class="service_info">Планировочное решение — от 2500₽/м²</p>
+          <div id="service_card_wrapper">
+            <div class="service_card">
+              <p class="price_bar">от 2500₽/м²</p>
+              <img
+                class="img_service"
+                src="./assets/pictures/service_1.jpg"
+                alt="img"
+              />
+              <p class="service_info">Планировочное решение</p>
+            </div>
+            <div class="service_card">
+              <p class="price_bar">от 3000₽/м²</p>
+              <img
+                class="img_service"
+                src="./assets/pictures/service_2.jpg"
+                alt="img"
+              />
+              <p class="service_info">Дизайн-проект</p>
+            </div>
+            <div class="service_card">
+              <p class="price_bar">от 30 000₽ в месяц</p>
+              <img
+                class="img_service"
+                src="./assets/pictures/service_3.jpg"
+                alt="img"
+              />
+              <p class="service_info">Авторский надзор</p>
+            </div>
+            <div class="service_card">
+              <p class="price_bar">5% от стоимости</p>
+              <img
+                class="img_service"
+                src="./assets/pictures/service_4.jpg"
+                alt="img"
+              />
+              <p class="service_info">Комплектация</p>
+            </div>
           </div>
-          <div class="service_card">
-            <img
-              class="img_service"
-              src="./assets/pictures/service_2.jpg"
-              alt="img"
-            />
-            <p class="service_info">Дизайн-проект — от 3000₽/м²</p>
-          </div>
-          <div class="service_card">
-            <img
-              class="img_service"
-              src="./assets/pictures/service_3.jpg"
-              alt="img"
-            />
-            <p class="service_info">Авторский надзор — от 30 000₽ в месяц</p>
-          </div>
-          <div class="service_card">
-            <img
-              class="img_service"
-              src="./assets/pictures/service_4.jpg"
-              alt="img"
-            />
-            <p class="service_info">
-              Комплектация — 5% от стоимости спецификации
-            </p>
-          </div>
+          <button id="order_service">Заказать услугу</button>
+        </div>
+
+        <div id="reviews_section">
+          <h3>ОТЗЫВЫ</h3>
+          
         </div>
 
         <div id="down_wrapper">
