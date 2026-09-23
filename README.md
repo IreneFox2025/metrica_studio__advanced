@@ -1,8 +1,10 @@
 # ✦ Metrica
 
+Advanced version in progress...
+
 Metrica is a landing page for an interior design studio, created from a provided design layout. The project focuses on semantic HTML, responsive structure, typography, visual hierarchy and interactive elements implemented with HTML and CSS.
 
-[![VIEW LIVE DEMO →](https://img.shields.io/badge/VIEW_LIVE_DEMO-%E2%86%92-ad1818?style=for-the-badge&labelColor=ad1818&color=ad1818)](https://irenefox2025.github.io/metrica_studio/)
+[![VIEW LIVE DEMO →](https://img.shields.io/badge/VIEW_LIVE_DEMO-%E2%86%92-ad1818?style=for-the-badge&labelColor=ad1818&color=ad1818)](https://irenefox2025.github.io/metrica_studio__advanced/)
 
 ## ✦ Features
 - ◆ Smooth navigation between page sections
