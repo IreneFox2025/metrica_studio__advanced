@@ -18,6 +18,7 @@ html {
 h1,
 h2,
 h3,
+h4,
 p,
 a,
 button,
@@ -252,42 +253,103 @@ summary {
 
 /* reviews */
 
+#title_review {
+  margin: 150px 0 30px;
+}
 
-#down_bg {
+#reviews_up_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#reviews_up_wrap .review_card {
+  width: 42%;
+}
+
+.review_card p {
+  margin-bottom: 20px;
+}
+
+.review_card_title {
+  font-size: 45px;
+  margin-bottom: 14px;
+}
+
+.review_text {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+#review_down_card {
+  width: 56%;
+}
+
+/* gallery */
+
+#gallery_section {
+  position: relative;
+  margin: 137px 0 150px;
+}
+
+.swiper {
+  width: 100%;
+}
+
+#swiper_container {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+#gallery_title {
+  font-size: 22px;
+  color: white;
+  position: absolute;
+  top: 60px;
+}
+
+.swiper-slide img {
   width: 100%;
   object-fit: cover;
-  height: 717px;
-  margin-top: 90px;
+  height: 991px;
 }
 
-#down_wrapper {
-  position: relative;
-}
-
-#down_info {
+#swiper_info {
   position: absolute;
-  left: 125px;
-  bottom: 60px;
+  bottom: 15%;
   color: white;
   font-size: 30px;
-  width: 22%;
+  width: 28%;
   line-height: 1.5;
+}
+
+#gallery_navigation {
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  display: flex;
+  width: 100px;
+  gap: 20px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  --swiper-navigation-color: transparent;
+
+  width: 50px;
+  height: 50px;
+
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* contacts */
 
-#contacts {
-  margin: 150px 0 160px;
-}
-
-#title_contacts:before {
-  content: "";
-  display: block;
-  margin-bottom: 12px;
-  margin-left: -2px;
-  background-image: url("./assets/pictures/icon.png");
-  width: 24px;
-  height: 24px;
+#link_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
 }
 
 .contact_link {
@@ -299,6 +361,27 @@ summary {
   transition: 0.3s;
 }
 
+#link_phone:before {
+  content: "";
+  display: block;
+  margin-bottom: 26px;
+  margin-left: -2px;
+  background-image: url("../assets/pictures/icon.png");
+  width: 24px;
+  height: 24px;
+}
+
+#link_mail:before {
+  content: "";
+  display: block;
+  margin-bottom: 26px;
+  margin-left: 2px;
+  background-image: url("../assets/pictures/icon_mail.png");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
 .contact_link:hover {
   color: grey;
   text-decoration: underline;
@@ -308,10 +391,9 @@ summary {
 /* footer */
 
 footer {
+  margin-top: 160px;
   background-color: #121212;
   text-align: center;
-  /* display: flex;
-  justify-content: center; */
 }
 
 #footer_menu {

@@ -6,6 +6,10 @@
     <title>Metrica</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -210,31 +214,108 @@
           </div>
           <button id="order_service">Заказать услугу</button>
         </div>
+      </div>
 
-        <div id="reviews_section">
-          <h3>ОТЗЫВЫ</h3>
-          
-        </div>
-
-        <div id="down_wrapper">
-          <img id="down_bg" src="./assets/pictures/down_bg.jpg" alt="down_bg" />
-          <div class="container">
-            <p id="down_info">
-              Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж
+      <div id="reviews_section">
+        <div class="container">
+          <h3 id="title_review">ОТЗЫВЫ</h3>
+          <div id="reviews_up_wrap">
+            <div class="review_card">
+              <h4 class="review_card_title">Ксения, проект 65 кв.м.</h4>
+              <p class="review_text">
+                Хочу искренне поблагодарить Вас за работу, проделанную на
+                высоком уровне! Нам с мужем было очень приятно с Вами работать!
+                Спасибо за Ваше умение правильно слышать пожелания своих
+                клиентов и выполнять работу, которая превосходит все ожидания!
+                Мы даже не надеялись, что на 34 кв.м. кто-то сможет нам грамотно
+                разместить все, что мы хотим и даже больше!
+              </p>
+              <p class="review_text">
+                Вам удалось это просто превосходно! Нам лишь осталось воплотить
+                красоту, которую Вы нам создали в жизнь и поделиться с Вами
+                результатом!
+              </p>
+            </div>
+            <div class="review_card">
+              <h4 class="review_card_title">Регина, проект 89 кв.м.</h4>
+              <p class="review_text">
+                Спасибо большое за такой классный проект! Все стильно, круто,
+                продумано! Очень приятно было с вами работать! Спасибо, что
+                терпели наши «хочу это, хочу то» в поисках идеального для нас
+                ремонта. Здорово, что мы нашли такого основательного,
+                ответственного и внимательного к деталям дизайнера!
+              </p>
+              <p class="review_text">
+                Хочется скорее реализовать проект и наслаждаться современной,
+                функциональной и красивой квартирой! Будем рекомендовать Вас
+                всем друзьям и знакомым!
+              </p>
+            </div>
+          </div>
+          <div id="review_down_card" class="review_card">
+            <h4 class="review_card_title">Яна, проект 120 кв.м.</h4>
+            <p class="review_text">
+              Хотелось бы сказать большое спасибо за проделанную работу! В
+              задачу Марины входила разработка дизайн-проекта в минимальные
+              сроки, и мне, конечно, не хотелось при этом потерять качество
+              выполнения работы. Но волнения были напрасны: все вопросы решались
+              оперативно, всегда предлагалось несколько вариантов решения, а
+              также предоставлялись комментарии, какой способ решения будет
+              более подходящим.
+            </p>
+            <p class="review_text">
+              В итоге проект был сдан в оговоренный срок, и мне просто не
+              терпится приступить к его реализации! Проект получился очень
+              стильным и современным! Буду рекомендовать Вас тем, кому еще
+              предстоит это непростое дело - ремонт!
             </p>
           </div>
+        </div>
+      </div>
+
+      <div id="gallery_section">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/pictures/gallery_1.jpg" alt="gallery_1" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/pictures/gallery_2.jpg" alt="gallery_2" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/pictures/gallery_3.jpg" alt="gallery_3" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/pictures/gallery_4.jpg" alt="gallery_4" />
+            </div>
+          </div>
+        </div>
+
+        <div id="swiper_container" class="container">
+          <div id="gallery_navigation">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+          <h3 id="gallery_title">ГАЛЕРЕЯ ПРОЕКТОВ</h3>
+          <p id="swiper_info"></p>
         </div>
       </div>
 
       <div id="contacts">
         <div class="container">
           <h3 id="title_contacts">КОНТАКТЫ</h3>
-          <a class="contact_link" href="tel:+7 935 895-45-35"
-            >+7 935 895-45-35</a
-          >
-          <a class="contact_link" href="mailto:hello@mail.com"
-            >hello@mail.com</a
-          >
+          <div id="link_wrapper">
+            <a id="link_phone" class="contact_link" href="tel:+7 935 895-45-35"
+              >+7 935 895-45-35</a
+            >
+            <a id="link_mail" class="contact_link" href="mailto:hello@mail.com"
+              >hello@mail.com</a
+            >
+          </div>
         </div>
       </div>
     </main>
@@ -248,4 +329,6 @@
       <p id="footer_info">студия дизайна интерьера Метрика — 2026</p>
     </footer>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="./script/script.js"></script>
 </html>
