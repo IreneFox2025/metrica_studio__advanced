@@ -1,8 +1,8 @@
 const prev = document.querySelector(".swiper-button-prev");
 const next = document.querySelector(".swiper-button-next");
 
-prev.style.backgroundImage = "url('../assets/pictures/prev.png')";
-next.style.backgroundImage = "url('../assets/pictures/next.png')";
+prev.style.backgroundImage = "url('./assets/pictures/prev.png')";
+next.style.backgroundImage = "url('./assets/pictures/next.png')";
 
 
 const galleryInfo = [
