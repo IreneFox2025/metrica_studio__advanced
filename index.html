@@ -213,6 +213,23 @@
             </div>
           </div>
           <button id="order_service">Заказать услугу</button>
+
+          <dialog class="popup_open" id="popup">
+            <div id="popup_content">
+              <div class="popup__close_btn"></div>
+
+              <h4 id="popup_title">Заказать услугу</h4>
+              <p id="popup_text">
+                Заполните форму, мы свяжемся с вами в течение суток
+              </p>
+
+              <input class="popup_input" type="text" name="username" placeholder="Имя" required/>
+              <input class="popup_input" type="email" name="email"placeholder="Электронная почта">
+              <input class="popup_input" type="tel" name="phone" placeholder="Номер телефона" required>
+              
+              <button id="send_btn_popup">Отправить</button>
+            </div>
+          </dialog>
         </div>
       </div>
 
