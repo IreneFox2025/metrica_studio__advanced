@@ -1,11 +1,104 @@
-/* Базовая версия = desktop 1400+ */
+/* desctop version for 1400+ */
 
 /* tablet */
 @media (max-width: 1024px) {
-    
+  .container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  #header_intro {
+    margin-bottom: 120px;
+  }
+
+  #head_bg {
+    height: 400px;
+  }
+
+  #head_info {
+    width: 42%;
+  }
+
+  #text_about {
+    font-size: 35px;
+  }
+
+  #projects {
+    margin-top: 120px;
+  }
+
+  .title_card {
+    margin: 15px 0;
+    font-size: 25px;
+  }
+
+  #service_card_wrapper {
+    gap: 8px;
+  }
+
+  .service_card {
+    margin-bottom: 80px;
+  }
+
+  .service_info {
+    font-size: 25px;
+  }
+
+  #order_service {
+    margin-bottom: 120px;
+  }
+
+  #title_review {
+    margin-top: 117px;
+  }
+
+  #reviews_up_wrap .review_card {
+    width: 47%;
+  }
+
+  .review_card_title {
+    font-size: 35px;
+  }
+
+  #review_down_card {
+    width: 72%;
+  }
+
+  #gallery_section {
+    margin: 120px 0;
+  }
+
+  .swiper-slide img {
+    height: 525px;
+  }
+
+  #gallery_title {
+    top: 80px;
+  }
+
+  #swiper_info {
+    font-size: 25px;
+    bottom: 10%;
+    width: 35%;
+  }
+
+  .contact_link {
+    font-size: 45px;
+  }
+
+  footer {
+    margin-top: 80px;
+  }
 }
 
 /* mobile */
 @media (max-width: 767px) {
-    
 }
