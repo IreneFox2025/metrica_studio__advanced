@@ -16,7 +16,7 @@
     <header>
       <div class="container">
         <div id="header_menu">
-          <img src="./assets/pictures/LOGO.png" alt="logo" />
+          <img id="logo" src="./assets/pictures/LOGO.png" alt="logo" />
           <ul id="menu">
             <li><a class="menu_item" href="#about_us_wrap">О НАС</a></li>
             <li><a class="menu_item" href="#projects">ПРОЕКТЫ</a></li>
@@ -223,10 +223,27 @@
                 Заполните форму, мы свяжемся с вами в течение суток
               </p>
 
-              <input class="popup_input" type="text" name="username" placeholder="Имя" required/>
-              <input class="popup_input" type="email" name="email"placeholder="Электронная почта">
-              <input class="popup_input" type="tel" name="phone" placeholder="Номер телефона" required>
-              
+              <input
+                class="popup_input"
+                type="text"
+                name="username"
+                placeholder="Имя"
+                required
+              />
+              <input
+                class="popup_input"
+                type="email"
+                name="email"
+                placeholder="Электронная почта"
+              />
+              <input
+                class="popup_input"
+                type="tel"
+                name="phone"
+                placeholder="Номер телефона"
+                required
+              />
+
               <button id="send_btn_popup">Отправить</button>
             </div>
           </dialog>
@@ -236,7 +253,7 @@
       <div id="reviews_section">
         <div class="container">
           <h3 id="title_review">ОТЗЫВЫ</h3>
-          <div id="reviews_up_wrap">
+          <div id="reviews_wrap">
             <div class="review_card">
               <h4 class="review_card_title">Ксения, проект 65 кв.м.</h4>
               <p class="review_text">
@@ -268,8 +285,7 @@
                 всем друзьям и знакомым!
               </p>
             </div>
-          </div>
-          <div id="review_down_card" class="review_card">
+            <div id="review_down_card" class="review_card">
             <h4 class="review_card_title">Яна, проект 120 кв.м.</h4>
             <p class="review_text">
               Хотелось бы сказать большое спасибо за проделанную работу! В
@@ -287,6 +303,8 @@
               предстоит это непростое дело - ремонт!
             </p>
           </div>
+          </div>
+          
         </div>
       </div>
 

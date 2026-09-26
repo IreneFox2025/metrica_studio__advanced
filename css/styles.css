@@ -11,7 +11,7 @@ html {
 }
 
 .container {
-  max-width: 80%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -268,7 +268,7 @@ summary {
   background-color: rgb(0, 0, 0, 0.8);
 }
 
-.popup__close_btn{
+.popup__close_btn {
   position: absolute;
   top: 32px;
   right: 34px;
@@ -304,16 +304,16 @@ summary {
   border: none;
   border-bottom: 2px solid black;
   outline: none;
-  padding: 5px 0; 
+  padding: 5px 0;
 }
 
-#send_btn_popup{
+#send_btn_popup {
   width: 643px;
   height: 67px;
   border-radius: 5px;
   color: white;
-  background-color: #AD1818;
-  border: 1px solid #AD1818;
+  background-color: #ad1818;
+  border: 1px solid #ad1818;
 }
 
 /* reviews */
@@ -322,14 +322,20 @@ summary {
   margin: 150px 0 30px;
 }
 
-#reviews_up_wrap {
+#reviews_wrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 30px;
 }
 
-#reviews_up_wrap .review_card {
-  width: 42%;
+#reviews_wrap .review_card {
+  width: 48%;
+  margin-bottom: 80px;
+}
+
+#reviews_wrap #review_down_card {
+  width: 70%;
 }
 
 .review_card p {
@@ -344,10 +350,6 @@ summary {
 .review_text {
   font-size: 22px;
   line-height: 1.5;
-}
-
-#review_down_card {
-  width: 56%;
 }
 
 /* gallery */

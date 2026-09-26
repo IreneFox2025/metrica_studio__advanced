@@ -3,7 +3,7 @@
 /* tablet */
 @media (max-width: 1024px) {
   .container {
-    max-width: 95%;
+    width: 95%;
     margin: 0 auto;
   }
 
@@ -73,7 +73,7 @@
   }
 
   #gallery_section {
-    margin: 120px 0;
+    margin: 40px 0;
   }
 
   .swiper-slide img {
@@ -100,5 +100,173 @@
 }
 
 /* mobile */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  #header_menu {
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  #header_intro {
+    margin-bottom: 80px;
+  }
+
+  #head_bg {
+    height: 310px;
+  }
+
+  #head_info {
+    font-size: 16px;
+    width: 43%;
+  }
+
+  #text_about {
+    font-size: 22px;
+    width: 78%;
+  }
+
+  #button_see_services {
+    width: 194px;
+    height: 51px;
+    font-size: 16px;
+  }
+
+  #projects {
+    margin-top: 80px;
+  }
+
+  .title_card {
+    font-size: 18px;
+  }
+
+  summary {
+    font-size: 16px;
+  }
+
+  .projects_info {
+    width: 84%;
+  }
+
+  #see_all_prj {
+    margin: 60px 0 100px;
+    height: 100px;
+    font-size: 22px;
+  }
+
+  #title_serv {
+    padding-top: 80px;
+  }
+
+  #service_card_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service_card {
+    margin-bottom: 60px;
+  }
+
+  .img_service {
+    height: 240px;
+  }
+
+  .price_bar {
+    width: 124px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .service_info {
+    font-size: 18px;
+  }
+
+  #order_service {
+    height: 100px;
+    font-size: 22px;
+    margin-bottom: 90px;
+  }
+
+  #reviews_wrap {
+    flex-direction: column;
+  }
+
+  #reviews_wrap .review_card,
+  #reviews_wrap #review_down_card {
+    width: 100%;
+  }
+
+  #title_review {
+    margin: 80px 0 22px;
+  }
+
+  .review_card_title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .review_text {
+    font-size: 16px;
+  }
+
+  #reviews_wrap .review_card {
+    margin-bottom: 60px;
+  }
+
+  #gallery_section {
+    margin: 20px 0 80px;
+  }
+
+  #gallery_title {
+    font-size: 14px;
+  }
+
+  .swiper-slide img {
+    height: 408px;
+  }
+
+  #swiper_info {
+    font-size: 19px;
+  }
+
+  #gallery_navigation {
+    width: 100%;
+    bottom: 50%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  #link_wrapper {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .contact_link {
+    font-size: 35px;
+    margin: 20px 0;
+  }
+
+  #link_phone:before {
+    margin-bottom: 15px;
+  }
+
+  #footer_menu {
+    padding-top: 30px;
+    margin-bottom: 41px;
+    gap: 30px;
+  }
+
+  .footer_menu_item {
+    font-size: 12px;
+  }
+
+  #footer_info {
+    font-size: 13px;
+  }
 }
