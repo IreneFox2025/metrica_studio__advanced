@@ -30,12 +30,24 @@ label {
   line-height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 li {
   list-style-type: none;
 }
 
 h3 {
   font-size: 18px;
+}
+
+.burger_btn {
+  display: none;
+}
+
+.burger{
+  display: none;
 }
 
 .title_section {
@@ -48,6 +60,7 @@ h3 {
   display: flex;
   margin: 33px auto 70px;
   justify-content: space-between;
+  align-items: center;
 }
 
 #menu {
@@ -326,7 +339,6 @@ summary {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 30px;
 }
 
 #reviews_wrap .review_card {
@@ -356,7 +368,7 @@ summary {
 
 #gallery_section {
   position: relative;
-  margin: 137px 0 150px;
+  margin: 57px 0 150px;
 }
 
 .swiper {
