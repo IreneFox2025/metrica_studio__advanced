@@ -24,7 +24,7 @@
             <li><a class="menu_item" href="#contacts">КОНТАКТЫ</a></li>
           </ul>
         </div>
-        <button class="burger_btn burger_btn_close">
+        <button class="burger_btn burger_btn_close" aria-label="Открыть меню">
           <span></span>
           <span></span>
         </button>
@@ -48,14 +48,22 @@
           <ul id="burger_menu">
             <li><a class="burger_menu_item" href="#about_us_wrap">О НАС</a></li>
             <li><a class="burger_menu_item" href="#projects">ПРОЕКТЫ</a></li>
-            <li><a class="burger_menu_item" href="#services_section">УСЛУГИ</a></li>
+            <li>
+              <a class="burger_menu_item" href="#services_section">УСЛУГИ</a>
+            </li>
             <li><a class="burger_menu_item" href="#contacts">КОНТАКТЫ</a></li>
           </ul>
           <p>для связи:</p>
-          <a id="burger_link_phone" class="contact_link" href="tel:+7 935 895-45-35"
+          <a
+            id="burger_link_phone"
+            class="contact_link"
+            href="tel:+7 935 895-45-35"
             >+7 935 895-45-35</a
           >
-          <a id="burger_link_mail" class="contact_link" href="mailto:hello@mail.com"
+          <a
+            id="burger_link_mail"
+            class="contact_link"
+            href="mailto:hello@mail.com"
             >hello@mail.com</a
           >
         </div>
@@ -242,35 +250,40 @@
 
           <dialog class="popup_open" id="popup">
             <div id="popup_content">
-              <div class="popup__close_btn"></div>
+              <div class="popup__close_btn">
+                <span></span>
+                <span></span>
+              </div>
 
               <h4 id="popup_title">Заказать услугу</h4>
               <p id="popup_text">
                 Заполните форму, мы свяжемся с вами в течение суток
               </p>
 
-              <input
-                class="popup_input"
-                type="text"
-                name="username"
-                placeholder="Имя"
-                required
-              />
-              <input
-                class="popup_input"
-                type="email"
-                name="email"
-                placeholder="Электронная почта"
-              />
-              <input
-                class="popup_input"
-                type="tel"
-                name="phone"
-                placeholder="Номер телефона"
-                required
-              />
+              <form id="popup_inp_wrapper">
+                <input
+                  class="popup_input"
+                  type="text"
+                  name="username"
+                  placeholder="Имя"
+                  required
+                />
+                <input
+                  class="popup_input"
+                  type="email"
+                  name="email"
+                  placeholder="Электронная почта"
+                />
+                <input
+                  class="popup_input"
+                  type="tel"
+                  name="phone"
+                  placeholder="Номер телефона"
+                  required
+                />
 
-              <button id="send_btn_popup">Отправить</button>
+                <button id="send_btn_popup" type="submit">Отправить</button>
+              </form>
             </div>
           </dialog>
         </div>
